@@ -61,7 +61,7 @@ const Details = ({ data, toggleDetail, detail }) => {
             overflow: "auto"
           }}
         >
-          {detail.customerReviews.map((item) => {
+          {detail?.customerReviews?.map((item) => {
             return (
               <div
                 style={{

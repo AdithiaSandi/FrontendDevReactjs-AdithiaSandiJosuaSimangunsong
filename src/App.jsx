@@ -293,7 +293,7 @@ function App() {
               className="items-container"
               style={{
                 display: "grid",
-                gridTemplateColumns: "repeat(4,1fr)",
+                gridTemplateColumns: "repeat(auto-fill,minmax(345px,1fr))",
                 justifyItems: "center",
                 // flexWrap: "wrap",
                 // justifyContent: "space-between",

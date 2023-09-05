@@ -292,9 +292,11 @@ function App() {
             <div
               className="items-container"
               style={{
-                display: "flex",
-                flexWrap: "wrap",
-                justifyContent: "space-between",
+                display: "grid",
+                gridTemplateColumns: "repeat(4,1fr)",
+                justifyItems: "center",
+                // flexWrap: "wrap",
+                // justifyContent: "space-between",
                 padding: "2vw 5vw",
               }}
             >

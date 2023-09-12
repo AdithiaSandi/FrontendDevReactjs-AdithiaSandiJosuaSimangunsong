@@ -13,22 +13,25 @@ import CircleIcon from "@mui/icons-material/Circle";
 const Cards = ({ data, toggleDetail }) => {
   return (
     <Card sx={{ width: 345, marginBottom: 10, boxShadow: 0 }}>
-      <CardMedia
+      <Box
         sx={{
           overflow: "hidden",
-          height: 140,
-          "&:hover": {
-            transform: "scale(1.5)",
-            transition: "transform 1s"
-          },
-          transform: "scale(1)",
-          transition: "transform 1s"
         }}
-        image={
-          `https://restaurant-api.dicoding.dev/images/small/` + data.pictureId
-        }
-        title="green iguana"
-      />
+      >
+        <CardMedia
+          sx={{
+            height: 140,
+            "&:hover": {
+              transform: "scale3d(1.5, 1.5, 1)",
+            },
+            transition: "transform 1s ease-in-out",
+          }}
+          image={
+            `https://restaurant-api.dicoding.dev/images/small/` + data.pictureId
+          }
+          title="green iguana"
+        />
+      </Box>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {data.name}

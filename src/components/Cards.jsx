@@ -21,6 +21,8 @@ const Cards = ({ data, toggleDetail }) => {
             transform: "scale(1.5)",
             transition: "transform 1s"
           },
+          transform: "scale(1)",
+          transition: "transform 1s"
         }}
         image={
           `https://restaurant-api.dicoding.dev/images/small/` + data.pictureId

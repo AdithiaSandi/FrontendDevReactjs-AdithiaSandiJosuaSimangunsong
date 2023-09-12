@@ -14,7 +14,14 @@ const Cards = ({ data, toggleDetail }) => {
   return (
     <Card sx={{ width: 345, marginBottom: 10, boxShadow: 0 }}>
       <CardMedia
-        sx={{ height: 140 }}
+        sx={{
+          overflow: "hidden",
+          height: 140,
+          "&:hover": {
+            transform: "scale(1.5)",
+            transition: "transform 1s"
+          },
+        }}
         image={
           `https://restaurant-api.dicoding.dev/images/small/` + data.pictureId
         }

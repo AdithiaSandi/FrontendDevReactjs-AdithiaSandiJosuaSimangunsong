@@ -294,9 +294,6 @@ function App() {
               style={{
                 display: "grid",
                 gridTemplateColumns: "repeat(auto-fill,minmax(345px,1fr))",
-                justifyItems: "center",
-                // flexWrap: "wrap",
-                // justifyContent: "space-between",
                 padding: "2vw 5vw",
               }}
             >

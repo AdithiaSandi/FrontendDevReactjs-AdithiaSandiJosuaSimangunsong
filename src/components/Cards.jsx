@@ -12,7 +12,9 @@ import CircleIcon from "@mui/icons-material/Circle";
 
 const Cards = ({ data, toggleDetail }) => {
   return (
-    <Card sx={{ width: 345, marginBottom: 10, boxShadow: 0 }}>
+    <Card
+      sx={{ width: "80vw", maxWidth: "345px", marginBottom: 10, boxShadow: 0 }}
+    >
       <CardMedia
         sx={{ height: 140 }}
         image={

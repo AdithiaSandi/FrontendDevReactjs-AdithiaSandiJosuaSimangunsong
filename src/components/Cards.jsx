@@ -31,7 +31,7 @@ const Cards = ({ data, toggleDetail }) => {
           image={
             `https://restaurant-api.dicoding.dev/images/small/` + data.pictureId
           }
-          title="green iguana"
+          title={data.name}
         />
       </Box>
       <CardContent>

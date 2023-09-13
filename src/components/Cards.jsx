@@ -15,13 +15,25 @@ const Cards = ({ data, toggleDetail }) => {
     <Card
       sx={{ width: "80vw", maxWidth: "345px", marginBottom: 10, boxShadow: 0 }}
     >
-      <CardMedia
-        sx={{ height: 140 }}
-        image={
-          `https://restaurant-api.dicoding.dev/images/small/` + data.pictureId
-        }
-        title="green iguana"
-      />
+      <Box
+        sx={{
+          overflow: "hidden",
+        }}
+      >
+        <CardMedia
+          sx={{
+            height: 140,
+            "&:hover": {
+              transform: "scale3d(1.5, 1.5, 1)",
+            },
+            transition: "transform 1s ease-in-out",
+          }}
+          image={
+            `https://restaurant-api.dicoding.dev/images/small/` + data.pictureId
+          }
+          title="green iguana"
+        />
+      </Box>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {data.name}
